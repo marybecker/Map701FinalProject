@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Views of the Land</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+        integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
+        crossorigin=""/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<div id="iiif-map"></div>
+<!--<div id="current-view">-->
+<!--    Current bounds:<br />-->
+<!--    <div id="current-bounds"></div>-->
+<!--</div>-->
+<div id="narrative">
+<div id="title">
+    <h1>Views of the Land</h1>
+    <hr>
+</div>
+<div id="ui">
+<!--    <button type="button" id="previous">&laquo; Previous</button><br>-->
+    <span id="pageOn">1 </span><span id="pages">of 9</span><button type="button" id="next">Next &raquo;</button>
+    <p id="desc">The European colonists used surveys and maps to support colonial claims to territory in what
+        is now called New England.    This map is part of a private collection and is made available
+        <a href="https://collections.leventhalmap.org/search/commonwealth:3f462s90h">in digital
+            format through the Norman B. Leventhal Map Center Collection</a>.  It is the first printed map of William Reed’s
+        survey of 1665.  The survey was commissioned by Massachusetts authorities to support the colonial boundaries that
+        were described in the first Massachusetts Charter of 1628.  The concept of claiming and owning the land was a vastly
+        different viewpoint from the indigenous communities that called the land their home.  In contrast, the land was
+        viewed as something to be honored and treasured, not exploited and “owned”
+        <a href="https://native-land.ca/about/why-it-matters/"><sup>5</sup></a>.</p>
+</div>
+<div id="bottom">
+    <hr>
+    Last Update:  20 Dec. 2022<br>
+    <a href="https://github.com/marybecker/Map701FinalProject">References</a>
+
+</div>
+</div>
+
+<script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+        integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
+        crossorigin=""></script>
+<script src="https://cdn.rawgit.com/mejackreed/Leaflet-IIIF/v3.0.0/leaflet-iiif.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
